@@ -1,0 +1,1 @@
+web gunicorn AawasTask.wsgi:application --log-file -

@@ -12,11 +12,6 @@ class ProjectView( generics.ListCreateAPIView,  generics.GenericAPIView):
     serializer_class = ProjectSerializer
     queryset = Projects.objects.all()
 
-    # def post(self, request, *args, **kwargs):
-    #     return self.create( request, *args, **kwargs)
-
-    # def get(self, request, *args, **kwargs):
-    #     return Response(self.list(request,*args, **kwargs))
 
 class ProjectTaskView(APIView):
     def get(self, request, *args, **kwargs):
