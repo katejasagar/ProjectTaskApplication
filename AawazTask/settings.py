@@ -14,6 +14,7 @@ import os
 
 import dj_database_url
 from pathlib import Path
+import django_heroku
 
 from django_heroku.core import settings
 
@@ -147,3 +148,5 @@ MEDIAFILES_DIRS = (os.path.join(BASE_DIR, 'media'),)
 CORS_ORIGIN_WHITELIST = [
     'http://localhost:3000'
 ]
+
+django_heroku.settings(locals())
