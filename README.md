@@ -1,12 +1,12 @@
 **Create an environment**
 
-  For windows:
+  For Windows:
 
   mkvirtualenv taskenvironment
   
   workon taskenvironment 
 
-**Installing Dependencies**
+**Installing dependencies**
 
 install django : pip install django
 
